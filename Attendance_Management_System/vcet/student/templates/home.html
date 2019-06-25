@@ -1,0 +1,19 @@
+<html>
+{%load static%}
+<head>
+    <link rel="stylesheet" href="{%static "css/styles.css" %}">
+</head>
+<body>
+<div class="login-page">
+  <div class="form">
+    {% if user.is_authenticated %}
+    <h2>Welcome {{user.username}}</h2>
+    <h4>Click here to continue to the home page!</h4>
+    <a href={{a}}><button>Home</button></a>
+    {% endif %}
+  </div>
+</div>
+</body>
+
+
+</html>

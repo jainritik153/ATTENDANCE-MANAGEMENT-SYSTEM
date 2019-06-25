@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+{%load static%}
+     <link rel="stylesheet" href="{%static "css/styles.css" %}">
+
+<body>
+<div class="login-page">
+  <div class="form">
+<h1>Welcome</h1>
+<h5>Enter the date Range</h5>
+<form method="post" >
+    {% csrf_token %}
+  Start
+  <input type="date" name="start">
+
+  End
+    <input type="date" name="end"><br>
+
+
+    <input type="radio" name="subject" value="aoa"> Aoa</br>
+    <input type="radio" name="subject" value="maths"> Maths<br>
+    <input type="radio" name="subject" value="ostl"> Ostl<br>
+      <button type="submit">Submit</button>
+
+
+
+</form>
+<a href="/student2"><button>Check</button></a>
+  </div>
+</div>

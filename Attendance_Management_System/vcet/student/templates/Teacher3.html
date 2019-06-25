@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+
+<tr><td>1</td>
+    <form method="post">
+        {% csrf_token %}
+     {% for i in ex %}
+    <td><input type="text" name="dfg"> </td>
+     {% endfor %}
+
+<input type="submit" name="a">
+    </form>
+
+</tr>
+<tr><td>1</td>
+    <form method="post">
+        {% csrf_token %}
+     {% for i in ex %}
+    <td><input type="text" name="ggfg"> </td>
+     {% endfor %}
+
+<input type="submit" name="b">
+    </form>
+
+</tr>
+</table>
+
+</body>
+</html>

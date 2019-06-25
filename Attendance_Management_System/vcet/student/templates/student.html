@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+ {%load static%}
+     <link rel="stylesheet" href="{%static "css/styles.css" %}">
+
+</head>
+<body>
+<div class="login-page">
+  <div class="form">
+{% if user.is_authenticated %}
+<h5>Total number of lectures conducted: {{total}}</h5>
+<h5>Present: {{present}}</h5>
+<h5>Absent: {{absent}}</h5>
+<h5>Percentage: {{per}}</h5>
+{% endif %}
+  </div>
+</div>
+</body>
+</html>

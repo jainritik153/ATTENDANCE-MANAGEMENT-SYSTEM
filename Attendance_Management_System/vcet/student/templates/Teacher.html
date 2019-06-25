@@ -1,0 +1,22 @@
+<html>
+<head>
+    {%load static%}
+     <link rel="stylesheet" href="{%static "css/styles.css" %}">
+</head>
+
+
+<body>
+ <div class="login-page">
+  <div class="form">
+Enter a date
+<form method="post" >
+    {% csrf_token %}
+  <input type="date" name="date">
+    <input type="submit">
+
+</form>
+      <a href="/update"><button>Update</button></a>
+  </div>
+ </div>
+</body>
+</html>
